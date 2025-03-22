@@ -1,16 +1,16 @@
 the first half constructs some code at runtime, then calls it
 
-gdb challenge
-breakpoint at mmap
-finish
-now ur in main
-x/50i $rip until u find the call rax instruction, break on it
+- gdb challenge
+- breakpoint at mmap
+- finish
+- now ur in main
+- x/50i $rip until u find the call rax instruction, break on it
 
 i checkpointed here to make it easy to come back to
 
-enter the constructed code, and do a x/50i $rip again
-look at the code. seems like it's xor'ing 0xbeefcafe against ur input and comparing to some specified memory
-i dug that memory out using x/32x
+- enter the constructed code, and do a x/50i $rip again
+- look at the code. seems like it's xor'ing 0xbeefcafe against ur input and comparing to some specified memory
+- i dug that memory out using x/32x
 
 0x7ffff7fc0084: 0xb6    0x9e    0xad    0xc5    0x92    0xfa    0xdf    0xd5
 0x7ffff7fc008c: 0xa1    0xa8    0xdc    0xc7    0xce    0xa4    0x8b    0xe1
