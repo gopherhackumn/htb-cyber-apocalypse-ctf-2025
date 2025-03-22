@@ -1,0 +1,70 @@
+   0x7ffff7fc0000:	push   rbp
+   0x7ffff7fc0001:	mov    rbp,rsp
+   0x7ffff7fc0004:	push   0x101213e
+   0x7ffff7fc0009:	xor    DWORD PTR [rsp],0x1010101
+   0x7ffff7fc0010:	movabs rax,0x67616c6620656874
+   0x7ffff7fc001a:	push   rax
+   0x7ffff7fc001b:	movabs rax,0x2073692074616857
+   0x7ffff7fc0025:	push   rax
+   0x7ffff7fc0026:	push   0x1
+   0x7ffff7fc0028:	pop    rax
+   0x7ffff7fc0029:	push   0x1
+   0x7ffff7fc002b:	pop    rdi
+   0x7ffff7fc002c:	push   0x12
+   0x7ffff7fc002e:	pop    rdx
+   0x7ffff7fc002f:	mov    rsi,rsp
+   0x7ffff7fc0032:	syscall
+   0x7ffff7fc0034:	sub    rsp,0x100
+   0x7ffff7fc003b:	mov    r12,rsp
+   0x7ffff7fc003e:	xor    eax,eax
+   0x7ffff7fc0040:	xor    edi,edi
+   0x7ffff7fc0042:	xor    edx,edx
+   0x7ffff7fc0044:	mov    dh,0x1
+   0x7ffff7fc0046:	mov    rsi,r12
+   0x7ffff7fc0049:	syscall
+   0x7ffff7fc004b:	test   rax,rax
+   0x7ffff7fc004e:	jle    0x7ffff7fc0082
+   0x7ffff7fc0050:	push   0x1a
+   0x7ffff7fc0052:	pop    rax
+   0x7ffff7fc0053:	mov    rcx,r12
+   0x7ffff7fc0056:	add    rax,rcx
+   0x7ffff7fc0059:	xor    DWORD PTR [rcx],0xbeefcafe
+   0x7ffff7fc005f:	add    rcx,0x4
+   0x7ffff7fc0063:	cmp    rcx,rax
+   0x7ffff7fc0066:	jb     0x7ffff7fc0059
+   0x7ffff7fc0068:	mov    rdi,r12
+   0x7ffff7fc006b:	lea    rsi,[rip+0x12]        # 0x7ffff7fc0084
+   0x7ffff7fc0072:	mov    rcx,0x1a
+   0x7ffff7fc0079:	cld
+   0x7ffff7fc007a:	repz cmps BYTE PTR ds:[rsi],BYTE PTR es:[rdi]
+   0x7ffff7fc007c:	sete   al
+   0x7ffff7fc007f:	movzx  eax,al
+   0x7ffff7fc0082:	leave
+   0x7ffff7fc0083:	ret
+   0x7ffff7fc0084:	mov    dh,0x9e
+   0x7ffff7fc0086:	lods   eax,DWORD PTR ds:[rsi]
+   0x7ffff7fc0087:	(bad)
+   0x7ffff7fc008a:	(bad)
+   0x7ffff7fc008c:	movabs eax,ds:0x8ae18ba4cec7dca8
+   0x7ffff7fc0095:	movabs ds:0xb79ad29dfa89e1dc,al
+   0x7ffff7fc009e:	add    BYTE PTR [rax],al
+   0x7ffff7fc00a0:	add    BYTE PTR [rax],al
+   0x7ffff7fc00a2:	add    BYTE PTR [rax],al
+   0x7ffff7fc00a4:	add    BYTE PTR [rax],al
+   0x7ffff7fc00a6:	add    BYTE PTR [rax],al
+   0x7ffff7fc00a8:	add    BYTE PTR [rax],al
+   0x7ffff7fc00aa:	add    BYTE PTR [rax],al
+   0x7ffff7fc00ac:	add    BYTE PTR [rax],al
+   0x7ffff7fc00ae:	add    BYTE PTR [rax],al
+   0x7ffff7fc00b0:	add    BYTE PTR [rax],al
+   0x7ffff7fc00b2:	add    BYTE PTR [rax],al
+   0x7ffff7fc00b4:	add    BYTE PTR [rax],al
+   0x7ffff7fc00b6:	add    BYTE PTR [rax],al
+   0x7ffff7fc00b8:	add    BYTE PTR [rax],al
+   0x7ffff7fc00ba:	add    BYTE PTR [rax],al
+   0x7ffff7fc00bc:	add    BYTE PTR [rax],al
+   0x7ffff7fc00be:	add    BYTE PTR [rax],al
+   0x7ffff7fc00c0:	add    BYTE PTR [rax],al
+   0x7ffff7fc00c2:	add    BYTE PTR [rax],al
+   0x7ffff7fc00c4:	add    BYTE PTR [rax],al
+   0x7ffff7fc00c6:	add    BYTE PTR [rax],al
