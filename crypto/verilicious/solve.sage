@@ -1,3 +1,5 @@
+# https://www.di.ens.fr/~pnguyen/MPRI/MPRI2009_LatticeAttacks.pdf
+
 from Crypto.PublicKey import RSA
 from sage.all import *
 from sage.modules.free_module_integer import IntegerLattice
