@@ -23,7 +23,7 @@ class Verilicious:
         # Namely, starts with 00 02 and has 00 in a certain position
 
         # We can compute all r^e * encflag % n = r^e * flag^e % n (since these are all given)
-        
+
         return int(self.cipher.decrypt(c, sen := get_random_bytes(self.key.n.bit_length()//8)) != sen)
 
     def encrypt(self, m):

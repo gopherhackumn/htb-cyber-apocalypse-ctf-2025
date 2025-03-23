@@ -141,53 +141,7 @@ print("Difference upper", [abs(int(x)) <= n for x in t - u])
 print(all([int(x) <= n for x in t - u]))
 print("Potential", hex(t[0]))
 
-# print("Waiting")
-# print(t := L.closest_vector(u))
-exit()
-
-
-# https://ctf-wiki.mahaloz.re/crypto/asymmetric/lattice/cvp/
-def babai(A, w):
-    A = A.LLL(delta=0.75)
-
-    G = A.gram_schmidt()[0]
-
-    t = w
-
-    for i in reversed(range(A.nrows())):
-
-        c = (t * G[i]) // (G[i] * G[i])
-
-        t -= A[i] * c
-
-        print("Vec", (w - t)[0])
-
-        yield w - t
-
-print("Babai")
-for _ in range(1000):
-    next(babai(M, u))
-
-
-exit()
-
-print("Finding closest vectors")
-close = L.enumerate_close_vectors(u)
-vecs = [next(close) for _ in range(10)]
-vecs = sorted(vecs, key=lambda v: (L(v).inner_product(L(v)), v))
-for v in vecs:
-    pass
-    # print(hex(v[0]))
-
-# for _ in range(10):
-#     v = next(close)
-#     print("Potential:", v[0])
-
-
-
-
-
-# Omg
+# Solution
 """
 Seed 8101949519820882734
 Matrix size: 73 73
