@@ -8,8 +8,8 @@ db = SQLAlchemy()
 login_manager = LoginManager()
 
 def create_app():
-    app = Flask(__name__)
-    
+    app = Flask(__name__, static_folder=None, static_url_path='/tmp')
+
     load_dotenv()
 
     app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
