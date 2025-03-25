@@ -1,0 +1,27 @@
+> TEST:
+Operation Eldoria is progressing as planned. The dissidents are becoming too confident, thinking they are untouchable behind "secure" tools. As protestors, they have flocked to Brave because it's open source, but that might cost them their privacy.
+
+> TEST:
+Interesting. Their reliance on Brave works in our favor. Send over the tool and a brief summary of its capabilities.
+
+> TEST:
+Oh! We should not forget to send the invitation link for this channel to the website so the rest of the parties can join. Coordination is key, and they’ll need access to our updates and tools like Brave.
+
+> TEST:
+📎 Brave.zip
+
+> TEST:
+This is the tool. Details:
+
+- Targets only Brave Browser users.
+- Exfiltrates the browser's local storage.
+- Operates silently and deletes traces upon execution.
+
+> TEST:
+Please send over the archive password.
+
+> TEST:
+Oh, yes! It is dr4g0nsh34rtb3l0ngst0m4l4k4r
+
+> TEST:
+I finished reviewing it. Looks promising! I will let my contacts know so they start distributing it. Let the operation begin!
