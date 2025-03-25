@@ -170,10 +170,10 @@ if __name__ == "__main__":
     print("=== Arcane Auctions Exploit ===")
 
     # Port assignments
-    target_ip = "94.237.61.57"
-    web_port = "32747"  # Auction site web application
-    smb_port = "46373"  # SMB share for mounting
-    checker_port = "41464"  # Checker port for flag verification
+    target_ip = "localhost"
+    web_port = "80"  # Auction site web application
+    smb_port = "445"  # SMB share for mounting
+    checker_port = "1337"  # Checker port for flag verification
 
     print(f"Target Web App: {target_ip}:{web_port}")
     print(f"SMB Share Port: {target_ip}:{smb_port}")
