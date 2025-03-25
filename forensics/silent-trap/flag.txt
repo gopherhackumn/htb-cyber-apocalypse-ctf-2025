@@ -1,0 +1,28 @@
+1. What is the subject of the first email that the victim opened and replied to?
+2. On what date and time was the suspicious email sent? (Format: YYYY-MM-DD_HH:MM) (for example: 1945-04-30_12:34)
+3. What is the MD5 hash of the malware file?
+4. What credentials were used to log into the attacker's mailbox? (Format: username:password)
+5. What is the name of the task scheduled by the attacker?
+6. What is the API key leaked from the highly valuable file discovered by the attacker?
+
+Game Crash on Level 5
+2025-02-24_15:46
+c0b37994963cc0aadd6e78a256c51547  (tshark -nr capture.pcapng -qz follow,http,ascii,8)
+proplayer@email.com completed
+Synchronization
+api_key=sk-3498fwe09r8fw3f98fw9832fw // final stream (kinda)
+
+
+
+// Stream 35
+* OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE LITERAL+ AUTH=PLAIN AUTH=LOGIN] Dovecot (Ubuntu) ready.
+$ LOGIN proplayer@email.com completed
+$ OK [CAPABILITY IMAP4rev1 SASL-IR LOGIN-REFERRALS ID ENABLE IDLE SORT SORT=DISPLAY THREAD=REFERENCES THREAD=REFS THREAD=ORDEREDSUBJECT MULTIAPPEND URL-PARTIAL CATENATE UNSELECT CHILDREN NAMESPACE UIDPLUS LIST-EXTENDED I18NLEVEL=1 CONDSTORE QRESYNC ESEARCH ESORT SEARCHRES WITHIN CONTEXT=SEARCH LIST-STATUS BINARY MOVE SNIPPET=FUZZY PREVIEW=FUZZY PREVIEW STATUS=SIZE SAVEDATE LITERAL+ NOTIFY SPECIAL-USE] Logged in
+$ APPEND Inbox {656}
+From: dev-support
+Subject: 2/21/2025 5:35:46 PM_report_U1VQUE9SVEhVQl9kZXYtc3VwcG9ydF9NaWNyb3NvZnQgV2luZG93cyBOVCA2LjIuOTIwMC4w
+
+VGiPTdHXQGP876EbMX2FJhm3ZazpvA8aO8jT1uC8xPhDZq/Np5oZQnHUpKxc36FHBznusaFRsSPtnJzlC4qyGNxcWMCIs1qdVzygFbDj0se4vntsvpU9rKvQPLcPERIjLB36+ws5PVmzVsnuxNmgUPegSj+VPrRfrcHkaE0LI3JfgWJOYIrLNt+FH27fDFopBUZMpF2tSfLTtYcMe0zqTRYSfrDSME8Brt3fVvKt7vXU54c93RDa2JUhSeVTkRqjhmFG7Eb5xMOZ0rNdF3m+BcA0gqlJWscl90g6Fx2FtmAUFerxZi3kqNOoNNNkARJ+qlma+hdwWgdyg3flboP9Q2JlAkxdr2YkDtK6oGZerQ5WUDjO2kC3wf/gK6PCY5MYVEBbzAnFmL1fZvUJGjIX4UdLiuw3geLLmWeTofdo0fHpKcfMOQMMgWhU2pa6xAjzUuX2yVhVVoKX9bZ3NMPZnM4GM+xAMW2eBo4HVK29wN2B4y74mrNH0xJcZDi/qcKbAkHsvGi0r9g=
++ OK
+$ OK [APPENDUID 1739763593 31] Append completed (0.017 + 0.000 + 0.016 secs).
+* BYE Server shutting down.
